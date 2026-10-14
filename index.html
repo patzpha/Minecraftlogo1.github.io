@@ -1,12 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VisionS°MR</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#000;
+}
+
+/* GIF inicial */
+#intro{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:#000;
+}
+
+#intro img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SEU SITE */
+#app{
+  width:100%;
+  height:100%;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
 <!-- GIF DE ENTRADA -->
 <div id="intro">
   <img src="imagem/gif.gif">
 </div>
 
-<!-- SEU SITE -->
+<!-- TODO O SEU HTML FICA AQUI -->
 <div id="app">
 
-  oi
+  <h1>VisionS°MR</h1>
+
+  <!-- COLOQUE AQUI O RESTANTE DO SEU SITE -->
 
 </div>
 
@@ -14,5 +58,8 @@
 setTimeout(()=>{
   document.getElementById("intro").style.display="none";
   document.getElementById("app").style.display="block";
-},4300);
+},4400);
 </script>
+
+</body>
+</html>
